@@ -1,6 +1,6 @@
 [user]
-  name = Jeff Geerling
-  email = geerlingguy@mac.com
+  name = Trey Brister
+  email = webstandardcss@gmail.com
 [core]
   editor = vi
   excludesfile = ~/.gitignore
@@ -11,12 +11,12 @@
   status = auto
 [web]
   browser = google-chrome
-[credential]
-  helper = osxkeychain
+#[credential]
+#  helper = osxkeychain
 [push]
   default = simple
 [merge]
-  tool = kdiff3
+  tool = vimdiff
 [difftool]
   prompt = false
 [alias]
