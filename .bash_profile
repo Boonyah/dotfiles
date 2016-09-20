@@ -1,7 +1,7 @@
 #
 # .bash_profile
 #
-# @author Jeff Geerling
+# @author Trey Brister
 # @see .inputrc
 #
 
@@ -42,9 +42,9 @@ function route_delete() {
 
 # Route IRC traffic through one of my servers.
 # Use SOCKS5 settings 'localhost' and 6667 for server/port.
-function irc_proxy() {
-  ssh -vD 6667 geerlingguy@atl1.servercheck.in
-}
+#function irc_proxy() {
+#  ssh -vD 6667 geerlingguy@atl1.servercheck.in
+#}
 
 # Syntax-highlight code for copying and pasting.
 # Requires highlight (`brew install highlight`).
@@ -62,17 +62,17 @@ alias gsd='git svn dcommit'
 alias gsfr='git svn fetch && git svn rebase'
 
 # Turn on Git autocomplete.
-brew_prefix=`brew --prefix`
-if [ -f $brew_prefix/etc/bash_completion ]; then
-  . $brew_prefix/etc/bash_completion
-fi
+#brew_prefix=`brew --prefix`
+#if [ -f $brew_prefix/etc/bash_completion ]; then
+#  . $brew_prefix/etc/bash_completion
+#fi
 
 # Use brew-installed PHP binaries.
-export PATH="$brew_prefix/opt/php56/bin:$PATH"
+#export PATH="$brew_prefix/opt/php56/bin:$PATH"
 
 # Use nvm.
-export NVM_DIR="$HOME/.nvm"
-. "$brew_prefix/opt/nvm/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#. "$brew_prefix/opt/nvm/nvm.sh"
 
 # Vagrant configuration.
 # export VAGRANT_DEFAULT_PROVIDER='virtualbox'
